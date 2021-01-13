@@ -30,8 +30,8 @@
 
 TYPES OF COLLOIDS 
 
- |  | 
-:--|:--|
- |  
- |      
+S.No |  	SDS concentration[SDS] × 102 M| Measured Conductance | Specific Conductance| Molar Conductance (λ_m) | √SDS
+:--|:--|:--|:--|:--|:--|
+
+    
 
