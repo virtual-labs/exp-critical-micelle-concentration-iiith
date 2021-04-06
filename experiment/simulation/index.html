@@ -2,11 +2,49 @@
 <html>
 <head>
 	<!-- Add CSS at the head of HTML file -->
+	<meta charset = "utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <title>Determination of CMC</title>
 </head>
 <body>
 		<!-- Your code goes here-->
+	<div class="container" style=" display: flex; justify-content: center; align-items: center;">
+	
+		<div class="grid">
+			<div class = "row">
+                <div class = "message" id = "message" value="message"></div>
+            </div>
+				<!-- <div class = "list-label"> Concentration of SDS (100 mol/L)</div> -->
+					<!-- <div class = "slider"> -->
+				<input id = "slider" type="range" min="1" max="16" name="slider" value="8" step = "1" onclick = "show_value(value)" onchange="show_value(value)">
+				<span id="slider_value"></span>
+				<input type="submit" id = "submit-btn" class = "btn-primary" value="Submit" onclick="move_pouring_beaker()">
+				<img id = "instrument" class = "instrument" src = './images/instrument3.png'>
+				<div id = "holding-solution" class = "holding-solution"></div>
+				<img id = "holding-beaker" class = "holding-beaker" src = "./images/beaker.png">
+				<!-- <figcaption class = "holding-beaker-label">Your label goes here</figcaption> -->
+				<div id = "measuring-solution"></div>
+				<img id = "measuring-beaker" class = "measuring-beaker" src = "./images/beaker.png" onclick="measure_value()">
+				<img id = "pouring-beaker" class = "pouring-beaker" src = "./images/pouring-beaker.png">
+				<div id = "pouring-solution"></div>
+				<img id = "cleaning-beaker" class = "cleaning-beaker" src = "./images/beaker.png">
+				<div id = "cleaning-solution"></div>
 
+				<img id = "distilled-water" class = "distilled-water" src = "./images/distilled-water.png">
+				<img id = "splash" class = "splash" src = "./images/splash2.png">
+				<img id = "cleaning-cloth" class = "cleaning-cloth" src = "./images/cleaning-cloth.png" onclick = "clean_rod()">
+
+			<!-- <div class = "value-box" id = "value-box" value = "cmc"></div> -->
+			<button  class="btn-primary reset-btn" onclick="window.location.reload() ">Reset Experiment</button>
+		</div>
+	
+	</div>
 	<!-- Add JS at the bottom of HTML file --> 
         <script src="./js/main.js"></script>
 </body>
