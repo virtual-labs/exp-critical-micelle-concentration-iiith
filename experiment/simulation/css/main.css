@@ -1,6 +1,8 @@
 /* You CSS goes in here */
-.container {
-    /* pass */
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./digital-7.ttf');
 }
 
 .title {
@@ -8,11 +10,13 @@
     font-size: 2.5vw;
 }
 
-.message {
+#message {
+    margin-top: 4vw;
     text-align: center;
-    background-color: yellow;
+    background-color:rgba(191, 232, 90, 1.0);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    font-weight: 200;
 }
 
 .conc_value {
@@ -101,14 +105,16 @@
 }
 
 .value-box {
-    height: 1vw;
+    height: 1.2vw;
     width: 2.5vw;
-    top: 25vw;
+    top: 23.7vw;
     /* background-color: red; */
-    left: 21vw;
+    left: 38vw;
     position: absolute;
     opacity: 1;
-    text-decoration-color: white;
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'digital-clock-font';
 }
 
 #pouring-solution {
@@ -174,10 +180,13 @@
 .reset-btn {
     top: 45vw;
     position: absolute;
-    left: 47vw;
-    height: 1.7vw;
-    width: 9vw;
-    font-size: 1vw;;
+    left: 49vw;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    background-color:#b1d656;
+    color: black;
+    font-weight: 150;
 }
 
 #submit-btn {
@@ -187,7 +196,10 @@
     width: 5vw;
     font-size: 1vw;
     left: 49vw;
-    background-color: rgb(40, 142, 200);
+    background-color:#b1d656;
+    color: black;
+    font-weight: 150;
+
     /* left: -2vw; */
 }
 
@@ -204,7 +216,7 @@
     top: 10vw;
     height: 1vw;
     width: 16vw;
-    color: #a4c652;
+    background-color: #a4c652;
 }
 
 #slider_value {
