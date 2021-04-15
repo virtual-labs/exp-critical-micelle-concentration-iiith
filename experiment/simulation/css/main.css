@@ -13,7 +13,6 @@
 #message {
     margin-top: 4vw;
     text-align: center;
-/*     background-color:rgba(191, 232, 90, 1.0); */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vw;
     font-weight: 200;
@@ -112,7 +111,7 @@
     left: 38vw;
     position: absolute;
     opacity: 1;
-    color: white;
+    color: #ffffff;
     font-size: 1.3vw;
     font-family: 'digital-clock-font';
 }
@@ -185,8 +184,9 @@
     width: 6vw;
     font-size: 1vw;
     background-color:#b1d656;
-    color: black;
+    color: #000000;
     font-weight: 150;
+    border-radius: 0.6vw 0.6vw;
 }
 
 #submit-btn {
@@ -197,10 +197,9 @@
     font-size: 1vw;
     left: 49vw;
     background-color:#b1d656;
-    color: black;
+    color: #000000;
     font-weight: 150;
-
-    /* left: -2vw; */
+    border-radius: 0.4vw 0.4vw;
 }
 
 .holding-beaker-label {
@@ -224,5 +223,5 @@
     left: 51vw;
     top: 8vw;
     font-size: 1vw;
-    color:orange;
+    color:#ffa500;
 }
