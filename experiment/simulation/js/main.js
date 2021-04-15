@@ -1,23 +1,23 @@
 //Your JavaScript goes in here
-var steps = [0.000, 0.040, 0.070, 0.100, 0.150, 0.300, 0.350, 0.400, 0.500, 0.600, 0.800, 1.000, 1.300, 1.500, 2.000, 2.500, 3.000, 4.000];
-var readings = [2.42, 2.44, 2.45, 2.47, 2.51, 2.57, 2.61, 2.66, 2.71, 2.66, 2.57, 2.48, 2.41, 2.36, 2.32, 2.36, 2.41, 2.54];
-var messages = [
+'use strict';
+const steps = [0.000, 0.040, 0.070, 0.100, 0.150, 0.300, 0.350, 0.400, 0.500, 0.600, 0.800, 1.000, 1.300, 1.500, 2.000, 2.500, 3.000, 4.000];
+const readings = [2.42, 2.44, 2.45, 2.47, 2.51, 2.57, 2.61, 2.66, 2.71, 2.66, 2.57, 2.48, 2.41, 2.36, 2.32, 2.36, 2.41, 2.54];
+const messages = [
     "Select the concentration value of SDS (in 100 mol/L) and click on submit.",
     "Click on the beaker with solution to meaure the reading.",
     "Click on the bottle of water to clean the conductance rod."
-]
+];
 document.getElementById("slider_value").innerHTML=steps[0].toFixed(3);
 document.getElementById("message").innerHTML=messages[0];
 
-var slider_step_index = 0;
+let slider_step_index = 0;
 function show_value(x)
 {
     slider_step_index = x-1;
-    document.getElementById("slider_value").innerHTML=steps[x-1].toFixed(3);;
+    document.getElementById("slider_value").innerHTML=steps[x-1].toFixed(3);
 }
 
-var rod_flag = 1;
-
+let rod_flag = 1;
 
 $("#slider").slider({
     range: true,
@@ -27,11 +27,9 @@ $("#slider").slider({
     // values: initSteps
 });
 
-
-
 function move_pouring_beaker() {
     rod_flag = 1;
-    var a1 = anime.timeline({
+    const animation_1 = anime.timeline({
         targets:'#pouring-solution',
         duration: 500,
         easing: 'linear',
@@ -52,7 +50,7 @@ function move_pouring_beaker() {
         opacity: 0
     });
 
-    var a2 = anime.timeline({
+    const animation_2 = anime.timeline({
         targets: "#pouring-beaker",
         duration: 500,
         easing: 'linear',
@@ -76,7 +74,7 @@ function move_pouring_beaker() {
         translateY: '0vw'
     });
 
-    var a3 = anime.timeline({
+    const animation_3 = anime.timeline({
         targets: "#measuring-solution",
         duration: 500,
         easing :'linear',
@@ -94,7 +92,7 @@ function move_pouring_beaker() {
 
 function measure_value() {
 
-    var a1 = anime.timeline({
+    const animation_1 = anime.timeline({
         targets: '#holding-beaker',
         duration: 500,
         easing: 'linear'
@@ -104,7 +102,7 @@ function measure_value() {
         translateY: '5vw'
     });
 
-    var a2 = anime.timeline({
+    const animation_2 = anime.timeline({
         targets: '#holding-solution',
         duration: 500,
         easing: 'linear'
@@ -114,7 +112,7 @@ function measure_value() {
         translateY: '5vw'
     });
 
-    var a3 = anime.timeline({
+    const animation_3 = anime.timeline({
         targets: '#cleaning-cloth',
         duration: 500,
         easing: 'linear'
@@ -128,7 +126,7 @@ function measure_value() {
         translateX: '0vw'
     });
 
-    var a4 = anime.timeline({
+    const animation_4 = anime.timeline({
         targets: "#measuring-beaker",
         duration: 500,
         easing: 'linear',
@@ -139,7 +137,7 @@ function measure_value() {
         translateX: '14.6vw'
     });
 
-    var a5 = anime.timeline({
+    const animation_5 = anime.timeline({
         targets: "#measuring-solution",
         duration: 500,
         easing: 'linear',
@@ -150,7 +148,7 @@ function measure_value() {
         translateX: '14.6vw'
     });
 
-    var a6 = anime.timeline({
+    const animation_6 = anime.timeline({
         targets: "#measuring-solution",
         duration: 2500,
         easing: 'linear',
@@ -168,7 +166,7 @@ function measure_value() {
 
 function clean_rod(){
 
-    var a1 = anime.timeline({
+    const animation_1 = anime.timeline({
         targets: "#measuring-beaker",
         duration: 500,
         easing: 'linear',
@@ -177,7 +175,7 @@ function clean_rod(){
         translateX: '0'
     });
 
-    var a2 = anime.timeline({
+    const animation_2 = anime.timeline({
         targets: "#measuring-solution",
         duration: 500,
         easing: 'linear',
@@ -186,21 +184,7 @@ function clean_rod(){
         translateX: '0'
     });
 
-    // var a3 = anime.timeline({
-    //     targets: '#cleaning-cloth',
-    //     duration: 500,
-    //     easing: 'linear'
-    // })
-    // .add({
-    //     delay: 600,
-    //     translateX: '-11vw'
-    // })
-    // .add({
-    //     delay: 600,
-    //     translateX: '0vw'
-    // });
-
-    var a4 = anime.timeline({
+    const animation_4 = anime.timeline({
         targets: '#cleaning-beaker',
         duration: 500,
         easing: 'linear'
@@ -216,7 +200,7 @@ function clean_rod(){
         translateY: '0'
     });
 
-    var a5 = anime.timeline({
+    const animation_5 = anime.timeline({
         targets: '#distilled-water',
         duration: 500,
         easing: 'linear'
@@ -236,7 +220,7 @@ function clean_rod(){
         translateY: '0'
     });
 
-    var a6 = anime.timeline({
+    const animation_6 = anime.timeline({
         targets: '#splash',
         duration: 300,
         easing: 'linear'
@@ -250,7 +234,7 @@ function clean_rod(){
         opacity: 0
     });
 
-    var a7 = anime.timeline({
+    const animation_7 = anime.timeline({
         targets: '#cleaning-solution',
         duration: 500,
         easing: 'linear'
@@ -270,7 +254,7 @@ function clean_rod(){
         translateY: '0'
     });
 
-    var a8 = anime.timeline({
+    const animation_8 = anime.timeline({
         targets: '#holding-beaker',
         duration: 500,
         easing: 'linear'
@@ -281,7 +265,7 @@ function clean_rod(){
         translateY: '0'
     });
 
-    var a9 = anime.timeline({
+    const animation_9 = anime.timeline({
         targets: '#holding-solution',
         duration: 500,
         easing: 'linear'
