@@ -4,7 +4,7 @@
   
 3. M. Halder, The Chemical Educator, Vol. 12, No. 1, 2007, (10.1333/ s00897071097a).
   
-4. [reference-link](http://nsdl.niscair.res.in/bitstream/123456789/311/1/PDF+corrected+surface+chemistry.pdf)
+4. [reference-link](https://nsdl.niscair.res.in/bitstream/123456789/311/1/PDF+corrected+surface+chemistry.pdf)
   
 5. J. P. Marcolongo and M. Mirenda, J. Chem. Educ., 2011, 88 (5), pp 629–633.
   
