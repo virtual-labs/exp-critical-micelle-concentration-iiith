@@ -5,7 +5,7 @@ const messages = [
     "Select the concentration value of SDS (in 100 mol/L) and click on submit.",
     "Click on the beaker with solution to meaure the reading.",
     "Click on the bottle of water to clean the conductance rod."
-]
+];
 document.getElementById("slider_value").innerHTML = steps[0].toFixed(3);
 document.getElementById("message").innerHTML = messages[0];
 
@@ -13,7 +13,7 @@ let slider_step_index = 0;
 
 function show_value(x) {
     slider_step_index = x - 1;
-    document.getElementById("slider_value").innerHTML = steps[x - 1].toFixed(3);;
+    document.getElementById("slider_value").innerHTML = steps[x - 1].toFixed(3);
 }
 
 let rod_flag = 1;
