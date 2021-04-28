@@ -8,14 +8,19 @@
     font-size: 2.5vw;
 }
 
-#message {
-    margin-top: 4vw;
+.message {
     text-align: center;
-    background-color:rgba(191, 232, 90, 1.0);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
-    font-weight: 200;
+    font-size: 1.4vw;
 }
+
+.instructionsBox{
+    margin-top: 15px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: 3px solid rgb(151, 210, 61) ;
+}
+
 
 #instrument {
     height: 14vw;
@@ -210,7 +215,7 @@
 }
 
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 800px){
     #instrument {
         height: 28vw;
         width: auto;
@@ -224,13 +229,17 @@
         font-size: 5vw;
     }
     
-    #message {
-        margin-top: 8vw;
+    .message {
         text-align: center;
-        background-color:rgba(191, 232, 90, 1.0);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 3vw;
-        font-weight: 200;
+        font-size: 20px;
+    }
+    
+    .instructionsBox{
+        margin-top: 15px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        border: 3px solid rgb(151, 210, 61) ;
     }
     
     #water {
