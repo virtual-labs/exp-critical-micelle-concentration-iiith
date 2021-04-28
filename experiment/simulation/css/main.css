@@ -164,6 +164,8 @@
     background-color:#b1d656;
     color: black;
     font-weight: 150;
+    border-radius: 1vw 1vw;
+    font-weight: 500;
 }
 
 #submit-btn {
@@ -176,6 +178,8 @@
     background-color:#b1d656;
     color: black;
     font-weight: 150;
+    border-radius: 1vw 1vw;
+    font-weight: 500;
 
     /* left: -2vw; */
 }
