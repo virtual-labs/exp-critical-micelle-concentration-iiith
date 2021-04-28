@@ -164,6 +164,8 @@
     background-color:#b1d656;
     color: black;
     font-weight: 150;
+    border-radius: 1vw 1vw;
+    font-weight: 500;
 }
 
 #submit-btn {
@@ -176,6 +178,8 @@
     background-color:#b1d656;
     color: black;
     font-weight: 150;
+    border-radius: 1vw 1vw;
+    font-weight: 500;
 
     /* left: -2vw; */
 }
@@ -366,6 +370,8 @@
         background-color:#b1d656;
         color: black;
         font-weight: 150;
+        border-radius: 2vw 2vw;
+        font-weight: 500;
     }
     
     #submit-btn {
@@ -374,10 +380,14 @@
         height: 3.8vw;
         width: 10vw;
         font-size: 1.8vw;
+        font-weight: 500;
         left: 46vw;
         background-color:#b1d656;
         color: black;
-        font-weight: 150;    
+        font-weight: 150; 
+        border-radius: 2vw 2vw;
+
+        
     }
     
     .holding-beaker-label {
