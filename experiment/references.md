@@ -8,3 +8,4 @@
 8. J. W. McBain, Colloid Science, D.C. Heath and Company, Boston (1950).
 9. D. J. Shaw, Introduction to Colloid and Surface Chemistry, Butterworth (1980).
 10. Physical Chemistry by Peter Atkins and Julio De Paula, Publisher: W. H. Freeman & Company (Dec 2009).
+

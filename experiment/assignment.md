@@ -1,5 +1,6 @@
 **Pre-Experiment**
 
+
 1. How will the micelle structure in nonpolar solvent be different from that in water?  
 2. How CMC value will be affected if an additive is used that decreases the dielectric constant of water?  
 3. Can one determine the CMC of a nonionic surfactant by conductivity measurement method?  
@@ -16,4 +17,5 @@
 6. Using your experimentally determined CMC value and assuming a mean aggregation number of 80 for SDS micelles, estimate the micelle concentration, [micelle] for a bulk surfactant concentration of 0.080 M.     
 7. What is value of the CMC expressed as a mole fraction (XCMC)? (Hint: XCMC= (no. of mol of SDS at CMC)/( no. of mol of SDS at CMC + no. of mol of solvent)    
 8. Calculate the standard free energy change of micellisation, ΔG<sub>mic</sub>?  
+
 
