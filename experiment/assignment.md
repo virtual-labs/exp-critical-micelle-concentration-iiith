@@ -1,4 +1,4 @@
-**Pre-Experiment**
+**Pre-Assignment**
 
 1. How will the micelle structure in nonpolar solvent be different from that in water?  
 2. How CMC value will be affected if an additive is used that decreases the dielectric constant of water?  
@@ -6,7 +6,7 @@
 4. What kind of current (d.c. vs. a.c.) is used in conductivity measurement?  
 5. CMCs of ionic surfactants are generally higher than the nonionic surfactants whereas aggregation numbers of ionic surfactants are generally smaller than the nonionic surfactants. Why?  
 
-**Post-Experiment** 
+**Post-Assignment** 
 
 1. What is the CMC of SDS?  
 2. Why the slopes of two straight lines above and below the CMC vary?  

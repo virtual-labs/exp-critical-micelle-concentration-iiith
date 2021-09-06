@@ -4,6 +4,3 @@ Micelles which are aggregates of amphiphilic or amphipathic (surfactant) molecul
 
 Figure 1. Graphical illustration shows the changes in some (given below) properties of the surfactant, SDS, solution as the function of SDS concentration. Properties: κ: conductivity, π: osmotic pressure, τ: turbidity, γ: surface tension, and λ: equivalent conductivity of SDS solution. Broken vertical line indicates the CMC value.
 
-
-To determine the critical micelle concentration (CMC) of an ionic surfactant, sodium dodecylsulphate (SDS).
-
