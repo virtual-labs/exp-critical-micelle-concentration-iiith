@@ -1,0 +1,1 @@
+- To determine the critical micelle concentration (CMC) of an ionic surfactant, sodium dodecylsulphate (SDS).
