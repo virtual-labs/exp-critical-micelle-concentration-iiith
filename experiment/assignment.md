@@ -17,3 +17,4 @@
 7. What is value of the CMC expressed as a mole fraction (X<sub>CMC</sub>)? (Hint: X<sub>CMC</sub>= (no. of mol of SDS at CMC)/( no. of mol of SDS at CMC + no. of mol of solvent)    
 8. Calculate the standard free energy change of micellisation, ΔG<sub>mic</sub>?  
 
+
